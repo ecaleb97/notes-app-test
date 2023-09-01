@@ -3,7 +3,7 @@ import 'dotenv/config'
 
 mongoose.set('strictQuery', false)
 
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.o1opl.mongodb.net/noteApp?retryWrites=true&w=majority`
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.s3ssvlc.mongodb.net/?retryWrites=true&w=majority`
 
 console.log('connecting to ', url)
 

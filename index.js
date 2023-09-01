@@ -13,7 +13,11 @@ app.use(cors())
 app.use(express.static('dist'))
 
 app.get('/', (req, res) => {
-  res.send('index.html')
+  const notes = Note.find({})
+    .then(notes => {
+      res.json(notes)
+    })
+  res.render('index.html', notes)
 })
 
 app.get('/api/notes', (req, res) => {

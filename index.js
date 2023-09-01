@@ -4,7 +4,7 @@ import cors from 'cors'
 import { Note } from './models/note.js'
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 
 let notes = []
 
